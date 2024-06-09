@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login-OnlineLibrary</title>
+        <style>
+            .body{
+                background-image:url("https://tse4.mm.bing.net/th?id=OIP.0VP1x5zEgcqr5NR7ESMv2wHaEo&pid=Api&P=0");
+               background-repeat: no-repeat;
+               background-size: 1300px 595px;
+               background-clip: padding-box;
+            }
+            form {
+                width: 300px; 
+    height: 250px; 
+    padding: 10px;
+    background:whitesmoke; 
+    position: absolute; 
+    margin:auto;
+    width: fit-content;
+    left: 0;
+    right: 0; 
+    top:0; 
+    bottom: 0; 
+    border-radius: 5px;
+    background: transparent;
+    border-style: solid;
+  border-color:rgba(247, 163, 6, 0.418);
+}
+h1{
+    color:rgb(207, 106, 39);
+    text-shadow:2px 2px orange;
+    text-decoration: underline;
+}
+h2{
+    color: whitesmoke;
+}
+p{
+    color:whitesmoke;
+}
+a{
+    color: aliceblue;
+}
+</style>
+    </head>
+    <body class="body">
+        <h1><center>Online Open Library</center></h1>
+    </body>
+    <body>
+        <form name="myForm"onsubmit="return validateForm()"method="post">
+            <p><h2><center>Login</center></h2></p>
+            <p>Email:<input type="text"placeholder="Enter your Email"required></p>
+            <p>Password:<input type="password"placeholder="Enter your Password"required></p>
+            <p><input type="checkbox">Remember Me Forgot Password</p>
+            <p><input type="button"value="Login"></a></p>
+            <p>Don't have an account<a href="register.html" ><b>Register</b></a></p>
+        </form>
+        <script>
+            function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+        </script>
+    </body>
+</html>
